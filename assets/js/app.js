@@ -253,10 +253,16 @@ function validateCurrentCsv(){
 }
 $("openQuestionManager").addEventListener("click",()=>{
  // Ask before revealing the CSV manager. The server validates this token when an import is submitted.
- const token = window.prompt("Administrator code required to open the CSV question-bank manager:");
- if (token === null || !token.trim()) {
-  questionManagerAdminToken = "";
+const adminCode = prompt(
+  "Administrator code required to open the CSV question-bank manager:"
+);
+
+if (adminCode !== "Admin@csv2026") {
+  alert("Invalid administrator code.");
   return;
+}
+
+// Open the CSV question-bank manager here
  }
  questionManagerAdminToken = token.trim();
  updateQuestionCounts();
