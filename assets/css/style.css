@@ -32,3 +32,21 @@
 /*#openQuestionManager {
   display: none !important;
 }*/
+
+
+.field select {
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: inherit;
+    cursor: pointer;
+    appearance: auto;
+}
+
+.field select option {
+    background: #ffffff;
+    color: #222222;
+}
