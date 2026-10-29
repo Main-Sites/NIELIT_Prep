@@ -4,7 +4,7 @@
 "use strict";
 
 const EXAM_CONFIG = {
-  durationSeconds: 45 * 60,
+  durationSeconds: 25 * 60,
   examTopic: "NIELIT CCC", // Change this label for the exam being administered.
   allowedScreenViolations: 4,
   accessCode: "NOOTECH2026", // Demo-only access gate; production access codes should also be checked server-side.
