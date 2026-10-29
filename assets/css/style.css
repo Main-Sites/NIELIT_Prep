@@ -63,3 +63,125 @@
   display: block;
   flex-shrink: 0;
 }
+
+
+/* =========================================================
+   NOOTECH EXAM ARENA — SUBTLE DARK THEME OVERRIDES
+   Theme colors only; existing layout, sizing, and behavior
+   are intentionally preserved.
+   ========================================================= */
+:root{
+  --ink:#e7ecf8;
+  --muted:#9aa7c2;
+  --purple:#9b8aff;
+  --purple2:#b3a6ff;
+  --cyan:#62d9d4;
+  --paper:#111827;
+  --line:#303b52;
+  --white:#1b2537;
+  --red:#ff7585;
+  --green:#54d6aa;
+}
+body{background:var(--paper);color:var(--ink)}
+.ambient-one{background:#392e70;opacity:.32}
+.ambient-two{background:#174b50;opacity:.28}
+.nav{background:rgba(17,24,39,.88);border-bottom-color:rgba(66,79,105,.65)}
+.brand,.brand small{color:var(--ink)}
+.brand small{color:var(--muted)}
+.nav-right{color:#aab5cc}
+.nav-divider{border-color:var(--line)}
+.eyebrow{color:var(--purple)}
+.eyebrow-icon{background:#2b2850;color:#c2b8ff}
+.hero-copy h1 span{color:var(--purple)}
+.hero-lede,.hero-note{color:#a5b0c8}
+.hero-note b{color:#e2e8f5}
+.hero-pills span{background:#1b2537;border-color:var(--line);color:#c0cbe0;box-shadow:none}
+.hero-pills span:first-child{color:#71d6b8}
+.stats-row{border-bottom-color:var(--line)}
+.stat small{color:#98a5bf}
+.entry-card,.narrow-card,.result-card,.manager-card{
+  background:#1b2537;border-color:#303b52;
+  box-shadow:0 20px 60px rgba(0,0,0,.20)
+}
+.entry-card label,.narrow-card label,.manager-card>label{color:#c7d0e3}
+.card-subtitle,.manager-card>.card-subtitle{color:#a2aec7}
+.mini-tag,.question-tag{background:#302b57;color:#c1b6ff}
+.shield{color:#69d5b7}
+.field{background:#151e2e;border-color:#3a4660}
+.field input,.field select{color:#e7ecf8}
+.field input::placeholder{color:#7f8ca8}
+.field-icon,.field-hint,.privacy-note,.under-card{color:#9aa7c2}
+.country-code{color:#c2cce0;border-right-color:var(--line)}
+.exam-summary,.score-panel{background:#252344;border-color:#3b3765}
+.summary-icon{background:#37315f;color:#bdb1ff}
+.exam-summary small{color:#a8b2ca}
+.exam-summary b{color:#e8ecf7}
+.summary-arrow{color:#b2a5ff}
+.primary-btn{background:linear-gradient(110deg,#7868e8,#594bc2)}
+.primary-btn:hover{box-shadow:0 12px 22px #0004}
+.footer{background:#0a101d;color:#edf1fb}
+.footer-brand small,.footer-right small{color:#9aa7c2}
+.footer-right span{color:#d0d8e8}
+.back-link{color:#a5b0c8}
+.access-symbol{background:#302b57;color:#b9adff}
+.security-foot{color:#9aa7c2}
+.security-foot code{background:#2a3448;color:#d9e1f2}
+.timer-box{background:#1b2537;border-color:var(--line);box-shadow:none}
+.timer-label,.timer-box small{color:#9aa7c2}
+.timer-box strong{color:#b3a6ff}
+.exam-meta{color:#a5b0c8}
+.exam-meta b{color:#e1e7f4}
+.progress-track{background:#303b52}
+.question-card,.palette-card{background:#1b2537;border-color:var(--line);box-shadow:0 10px 30px rgba(0,0,0,.14)}
+.question-card h3,.palette-card h3{color:#e7ecf8}
+.palette-card>p,.palette-legend,.palette-note{color:#a0acc4}
+.option{background:#172132;border-color:#35415a;color:#c7d0e3}
+.option:hover{border-color:#8f80ef;background:#252344}
+.option.selected{border-color:#9b8aff;background:#302b57;color:#e0dbff}
+.option-key{border-color:#46516a;color:#b1bdd3}
+.option.selected .option-key{background:#8a78f0;border-color:#8a78f0;color:#fff}
+.question-actions{border-top-color:#303b52}
+.secondary-btn{background:#202b3f;border-color:#3a4660;color:#c4cee1}
+.palette button{background:#172132;border-color:#35415a;color:#b8c3d9}
+.palette button.current{background:#302b57;border-color:#9b8aff;color:#d7d0ff}
+.palette button.answered{background:#173c36;border-color:#2e8069;color:#8ce5c5}
+.legend-dot{background:#172132;border-color:#46516a}
+.answered-dot{background:#235849;border-color:#398f77}
+.current-dot{background:#463b7b;border-color:#9b8aff}
+.violation-badge{background:#49351f;color:#f0bf78}
+.warning-banner{background:#3b2d1c;border-color:#6d512c;color:#f3ca87;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+.warning-banner button{color:#f3ca87}
+.result-icon{background:#173d36;color:#65ddb6}
+.score-panel span{color:#a6b1c9}
+.score-panel strong{color:#c0b5ff}
+.score-divider{border-left-color:#45416d}
+.result-detail,.review-item{background:#172132;border-color:#35415a}
+.result-detail b,.review-item h4{color:#e2e8f5}
+.result-detail small,.review-item p{color:#a5b0c8}
+.review-item .correct-answer{color:#6de0b7}
+.review-item .wrong-answer{color:#ff8793}
+.modal-backdrop{background:#050914c9}
+.modal{background:#1b2537;color:#e7ecf8;box-shadow:0 25px 80px #0006}
+.modal p{color:#a5b0c8}
+.modal-icon{background:#49351f;color:#f0bf78}
+.manager-link{background:#202344;border-color:#494176;color:#c3b8ff;box-shadow:none}
+.manager-link:hover{background:#2c2a50;border-color:#7769c5}
+.manager-warning{background:#3b2d1c;border-color:#6d512c;color:#f3ca87}
+.upload-label{background:#302b57;color:#c3b8ff}
+.upload-label:hover{background:#3a3467}
+.csv-format{background:#172132;border-color:#35415a;color:#b7c2d8}
+.csv-format code{background:#2a3448;color:#e0e7f5}
+.csv-textarea{background:#121b2a;border-color:#3a4660;color:#e0e7f5}
+.csv-textarea::placeholder{color:#8592ad}
+.import-status{background:#173c36;color:#8ce5c5}
+.import-status.error{background:#47252d;color:#ff9aa5}
+.csv-preview{border-color:#35415a}
+.preview-summary{background:#202b3f;border-bottom-color:#35415a;color:#d4dced}
+.preview-line{border-bottom-color:#303b52;color:#c7d0e3}
+.preview-line.valid{color:#72dcb6}
+.preview-line.error{color:#ff9aa5;background:#3a222b}
+.preview-line.duplicate{color:#f0c37c;background:#382f20}
+.manager-footer{border-top-color:#303b52;color:#a5b0c8}
+.manager-footer b{color:#e2e8f5}
+.text-danger-btn{color:#ff8793}
+.field select option{background:#1b2537;color:#e7ecf8}
