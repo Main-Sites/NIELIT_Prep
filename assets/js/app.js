@@ -251,7 +251,7 @@ function validateCurrentCsv(){
   setImportStatus(valid?`${unique.length} question(s) passed validation. Review the preview, then click “Add valid questions”.`:"Import is disabled until all rows are valid and duplicate-free. Correct the CSV and validate again.",!valid);
  }catch(error){setImportStatus(error.message,true);$("csvPreview").textContent=error.message;}
 }
-
+/* Logic for opening CSV Question manager with proper Admin Code*/
 $("openQuestionManager").addEventListener("click", () => {
   // Ask for the administrator code before opening the CSV manager.
   const token = window.prompt(
