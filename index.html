@@ -12,7 +12,7 @@
 <body>
 <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
 <nav class="nav">
-  <a class="brand" href="#" aria-label="Nootech home"><span class="brand-mark">N</span><span>NOOTECH <small>EXAM ARENA</small></span></a>
+  <a class="brand" href="#" aria-label="Nootech home"><span class="brand-mark">NTC</span><span>NOOTECH <small>EXAM ARENA</small></span></a>
   <div class="nav-right"><span class="live-dot"></span><span>EXAM PORTAL</span><span class="nav-divider"></span><span class="nav-date" id="todayLabel">NIELIT PREPARATION</span></div>
 </nav>
 <main class="shell">
@@ -42,7 +42,17 @@
           <label for="examDate">Date of examination <span>*</span></label>
           <div class="field"><span class="field-icon">▦</span><input id="examDate" name="examDate" type="date" required></div>
           <label for="examTopic">Exam topic / subject <span>*</span></label>
-          <div class="field"><span class="field-icon">▤</span><input id="examTopic" name="examTopic" type="text" value="NIELIT CCC" placeholder="e.g. NIELIT CCC - Computer Fundamentals" maxlength="100" required></div>
+          <div class="field">
+    <span class="field-icon">▤</span>
+    <select id="examTopic" name="examTopic" required>
+        <option value="" disabled selected>Select Exam Topic</option>
+        <option value="Fundamentals">NIELIT CCC - Fundamentals</option>
+        <option value="Operating System">NIELIT CCC - Operating System</option>
+        <option value="Writer">NIELIT CCC - Writer</option>
+        <option value="Calc">NIELIT CCC - Calc</option>
+        <option value="Presenter">NIELIT CCC - Presenter</option>
+    </select>
+</div>
           <div class="exam-summary"><div class="summary-icon">⏱</div><div><b>NIELIT Foundation Mock Test</b><small>45 minutes <i>•</i> <span id="examSummaryQuestionCount">10</span> questions <i>•</i> 1 mark each</small></div><span class="summary-arrow">↗</span></div>
           <button class="primary-btn" type="submit">Continue to access code <span>→</span></button>
           <p class="privacy-note">🔒 Your details are used to identify this practice session.</p>
