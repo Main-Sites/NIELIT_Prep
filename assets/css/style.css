@@ -35,15 +35,21 @@
 
 
 .field select {
-    width: 100%;
-    padding: 12px 14px;
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
     background: transparent;
-    font-size: 15px;
-    color: inherit;
-    cursor: pointer;
-    appearance: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+.field select:focus,
+.field select:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .field select option {
