@@ -56,3 +56,10 @@
     background: #ffffff;
     color: #222222;
 }
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
