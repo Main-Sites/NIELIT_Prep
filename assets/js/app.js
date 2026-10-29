@@ -251,23 +251,28 @@ function validateCurrentCsv(){
   setImportStatus(valid?`${unique.length} question(s) passed validation. Review the preview, then click “Add valid questions”.`:"Import is disabled until all rows are valid and duplicate-free. Correct the CSV and validate again.",!valid);
  }catch(error){setImportStatus(error.message,true);$("csvPreview").textContent=error.message;}
 }
-$("openQuestionManager").addEventListener("click",()=>{
- // Ask before revealing the CSV manager. The server validates this token when an import is submitted.
-const adminCode = prompt(
-  "Administrator code required to open the CSV question-bank manager:"
-);
 
-if (adminCode !== "Admin@csv2026") {
-  alert("Invalid administrator code.");
-  return;
-}
+$("openQuestionManager").addEventListener("click", () => {
+  // Ask for the administrator code before opening the CSV manager.
+  const token = window.prompt(
+    "Administrator code required to open the CSV question-bank manager:"
+  );
 
-// Open the CSV question-bank manager here
- }
- questionManagerAdminToken = token.trim();
- updateQuestionCounts();
- showView("questionManager");
+  // Cancel or incorrect code: do not open the manager.
+  if (token !== "Admin@csv2026") {
+    if (token !== null) {
+      window.alert("Invalid administrator code.");
+    }
+    return;
+  }
+
+  // Store the validated token for the existing import workflow.
+  questionManagerAdminToken = token.trim();
+
+  updateQuestionCounts();
+  showView("questionManager");
 });
+
 $("closeQuestionManager").addEventListener("click",()=>{
  questionManagerAdminToken = "";
  pendingCsvQuestions = [];
